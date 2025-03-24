@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+.formWrapper {
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+    width: clamp(330px, 80vw, 1000px);
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.myForm {
+    align-self: center;
+    padding: 3rem 1.5rem;
+}
+
+.emptyWrapInner h1 {
+    line-height: 2;
+}
+
+.emptyWrapInner p {
+    color: hsl(203, 41%, 72%);
+    line-height: 1.5;
+}
+
+.emptyWrap img {
+    width: 50%;
+    height: 50%;
+}
+
+.formTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formTop button {
+    color: hsl(200, 24%, 40%);
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+.formTop p {
+    color: hsl(202, 55%, 16%);
+    font-weight: 600;
+}
+
+.form {
+    margin-top: 2rem;
+}
+
+.label {
+    color: hsl(200, 24%, 40%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.inputWrap input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    color: hsl(202, 55%, 16%);
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.inputWrap input[type="text"]:focus {
+    border: none;
+    outline: none;
+}
+
+.inputWrap {
+    display: flex;
+    border: 1px solid hsl(200, 24%, 40%);
+    margin-top: .5rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+}
+
+.sign {
+    background-color: hsl(203, 41%, 72%);
+    padding: 10px 13px;
+    color: hsl(200, 24%, 40%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.side {
+    display: flex;
+    gap: 1rem;
+}
+
+.radioWrap {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.radioWrap input[type="radio"] {
+    display: none;
+}
+
+.radioWrap .typeSpan {
+    color: hsl(202, 55%, 16%);
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.radioWrap label {
+    position: relative;
+}
+
+.radioWrap label::before {
+    content: '';
+    display: inline-block;
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    border: .1rem solid hsl(200, 24%, 40%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.radioWrap label::after {
+    position: absolute;
+    left: 9px;
+    top: 14px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: hsl(200, 24%, 40%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 400ms ease;
+    -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -ms-transition: 400ms ease;
+    -o-transition: 400ms ease;
+}
+
+.radioWrap input[type="radio"]:checked ~ label::after {
+    opacity: 1;
+}
+
+.radioWrap:hover {
+    background-color: hsl(62, 68%, 77%);
+    border: 1px solid hsl(61, 70%, 52%);
+    cursor: pointer;
+}
+
+.radioWrap:hover > label::after {
+    background-color: hsl(61, 70%, 52%);
+}
+
+.radioWrap:hover > label::before {
+    border: .1rem solid hsl(61, 70%, 52%);
+}
+
+
+.calcBtn {
+    background-color: hsl(61, 70%, 52%);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border: none;
+    padding: 7px 20px;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+}
+
+.calcBtn img {
+    width: 20px;
+}
+
+.calcBtn:hover {
+    background-color: hsl(62, 68%, 77%);
+}
+
+.error {
+    color: hsl(4, 69%, 50%);
+    font-weight: 600;
+    font-size: 14px;
+    margin-block: .4rem;
+}
+
+.errorborder {
+    border: 1px solid hsl(4, 69%, 50%);
+}
+
+.errorsign {
+    background-color: hsl(4, 69%, 50%);
+    color: hsl(0, 0%, 100%);;
+}
+
+.options {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.leftdiv {
+    background-color: hsl(202, 55%, 16%);
+    border-bottom-left-radius: 100px;
+    padding: 1.5rem;
+}
+
+.resultInner {
+    background-color: hsl(199, 76%, 5%);
+    border-top: 2px solid hsl(61, 70%, 52%);
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.emptyWrap {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.emptyWrapInner {
+    padding-top: 1rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.resultdiv p {
+    color: hsl(203, 41%, 72%);
+    line-height: 1.5;
+}
+
+.total {
+    color: hsl(61, 70%, 52%) !important;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.inner {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid hsl(203, 41%, 72%);
+}
+
+.inner2 {
+    padding-block: 1rem;
+}
+
+.inner2 .innerTot{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+@media (width < 800px) {
+
+    .emptyWrapInner {
+        position: unset;
+        inset: unset;
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+    }
+}
+
+@media (width < 886px) {
+    .formWrapper {
+        gap: unset;
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+}
+    .leftdiv {
+        padding-bottom: 5rem;
+        border-bottom-left-radius: unset;
+    }
+    .emptyWrapInner h1 {
+        margin-bottom: .7rem;
+        line-height: 1.2;
+    }
+}
+
+@media (width < 400px) {
+    .formWrapper {
+        width: 100%;
+    }
+}

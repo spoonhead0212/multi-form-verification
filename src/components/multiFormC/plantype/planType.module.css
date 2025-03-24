@@ -1,0 +1,62 @@
+.planning {
+    /* container-type: inline-size; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.planning label {
+    flex-grow: 1;
+    border: 1px solid hsl(203, 41%, 72%);
+    padding: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.planCard input {
+    display: none;
+}
+
+.planCard__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.planCard:hover {
+    border: 1px solid hsl(202, 55%, 16%);
+}
+
+.planCard {
+    cursor: pointer;
+}
+
+.planText p:nth-child(1) {
+    color: hsl(202, 55%, 16%);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.planText p:nth-child(2) {
+    color: hsl(203, 41%, 72%);
+}
+
+.planCard:has(input[type="radio"]:checked) {
+    border: 2px solid hsl(202, 55%, 16%);
+}
+
+@media screen and (1029px > width) {
+    .planning {
+        flex-direction: column;
+    }
+
+    .planning label {
+        width: 100%;
+    }
+    
+}

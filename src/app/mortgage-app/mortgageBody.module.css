@@ -1,0 +1,14 @@
+.mortgageAppBody {
+    background-color: hsl(202, 86%, 94%);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+@media (width < 800px) {
+    .mortgageAppBody {
+        height: unset;
+        /* width: 100%; */
+    }
+}

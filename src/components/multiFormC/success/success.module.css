@@ -1,0 +1,18 @@
+.success {
+    text-align: center;
+}
+
+/* .success p {
+    width: 100%;
+}  */
+
+.success h1 {
+    color: hsl(202, 55%, 16%);
+    margin-top: 1rem;
+}
+
+.success p {
+    color: hsl(200, 26%, 54%);
+    margin-top: 1rem;
+    line-height: 1.5;
+}

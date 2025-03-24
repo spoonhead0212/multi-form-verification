@@ -1,0 +1,11 @@
+.choiceBox {
+    background-color: hsl(202, 86%, 94%);
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}

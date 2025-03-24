@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --font-family: "Plus Jakarta Sans", sans-serif;
+    --White: hsl(0, 0%, 100%);
+    --Slate-100: hsl(202, 86%, 94%);
+    --Slate-300: hsl(203, 41%, 72%);
+    --Slate-500: hsl(200, 26%, 54%);
+    --Slate-700: hsl(200, 24%, 40%);
+    --Slate-900: hsl(202, 55%, 16%);
+    --Lime: hsl(61, 70%, 52%);
+    --Red: hsl(4, 69%, 50%);
+    --Font-size-paragraph: 16px;
+    --Weights5: 500;
+    --Weights7: 700;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.homeStyle, .mortgageAppStyle {
+    height: 100vh;
+}
+
+.heading {
+    color: var(--Slate-900);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.sub-head {
+    color: var(--Slate-300);
+    font-weight: 500;
+    margin-top: .5rem;
+}
+
+.btn-box {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.btn {
+    color: var(--White);
+    background-color: var(--Slate-900);
+    font-weight: var(--Weights7);
+    font-family: var(--font-family);
+    border: none;
+    padding: .5rem 1.2rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--Slate-700);
+}
+

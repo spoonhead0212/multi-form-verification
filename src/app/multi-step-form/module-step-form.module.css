@@ -1,0 +1,37 @@
+
+
+.floor {
+    background-color: hsl(206, 94%, 87%);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.dashboard {
+    border-radius: .8rem;
+    width: clamp(350px, 70vw, 1000px);
+    min-height: 90%;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    gap: 2rem;
+    padding: .5rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+}
+
+@media screen and (1029px > width) {
+    .floor {
+        height: 100%;
+        /* position: relative; */
+    }
+    .dashboard {
+        flex-direction: column;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        padding: 0;
+    }
+    
+}

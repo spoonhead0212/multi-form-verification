@@ -1,0 +1,51 @@
+.alert {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.personal {
+    margin-top: 1.5rem;
+}
+
+.fieldBox {
+    margin-bottom: 1rem;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: end;
+}
+
+.alert label {
+    font-size: .8rem;
+    font-weight: 700;
+    color: hsl(202, 55%, 16%);
+}
+
+.alert p {
+    font-size: .8rem;
+    font-weight: 700;
+    color: hsl(4, 69%, 50%);
+}
+
+.btnBox {
+    margin-top: 2.5rem;
+}
+
+.fieldBox input {
+    border: 1px solid hsl(203, 41%, 72%);
+    color: hsl(203, 41%, 72%);
+    padding: .8rem;
+    width: 100%;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.fieldBox input:focus {
+    outline: 1px solid hsl(202, 55%, 16%);
+}

@@ -1,0 +1,68 @@
+.selectedPlan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectedPlan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.selectedPlan__plan p {
+    color: hsl(202, 55%, 16%);
+    font-weight: 700;
+}
+
+.changeBtn {
+    margin-top: .25rem;
+    background-color: transparent;
+    color: hsl(200, 26%, 54%);
+    border: none;
+    border-bottom: 2px solid hsl(200, 26%, 54%);
+}
+
+.selectedPlan__price,
+.total p:nth-child(2) {
+    color: hsl(202, 55%, 16%);
+    font-weight: 700;
+}
+
+.selectedPlan {
+    border-bottom: 1px solid hsl(200, 24%, 40%);
+    padding-block: 1rem;
+}
+
+.addonName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: .5rem;
+} 
+
+.addonName p {
+    /* margin-block: 5px; */
+}
+
+.addonName p:nth-child(1),
+.total p:nth-child(1) {
+    color: hsl(200, 24%, 40%);
+}
+
+.addonName p:nth-child(2) {
+    color: hsl(202, 55%, 16%);
+    font-weight: 700;
+}
+
+.total p:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+.total {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
