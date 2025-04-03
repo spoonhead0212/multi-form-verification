@@ -9,7 +9,7 @@ export const planSlice = createSlice({
     initialState,
     reducers: {
         addPlan: (state, action) => {
-            state.selectedPlan = action.payload
+            state.push(action.payload)
         },
         updatePlan: (state, action) => {
             state.selectedPlan = {...state.selectedPlan, ...action.payload}

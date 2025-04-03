@@ -1,0 +1,136 @@
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new {
+    border-left: 4px solid var(--Desaturated-Dark-Cyan);
+}
+
+.filteredJobsWrapper {
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.jobDetailsWrapper {
+    container-name: jobDetailsContainer;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0px 0px 5px hsl(180, 29%, 50%);
+    background-color: white;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+
+@media (width < 1000px) {
+    .jobDetailsWrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.jobDetails {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
+}
+
+@media (width < 1000px) {
+    .jobDetails {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.languagesWrapper {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.jobDetailsListing {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.jobDetailsListing li:nth-child(1) {
+    color: var(--Desaturated-Dark-Cyan);
+    font-weight: var(--Weights-bold);
+}
+
+.newest,
+.feature {
+    text-align: center;
+    font-weight: var(--Weights-bold);
+    font-size: 0.625rem;
+    padding: 0.2rem .3rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.newest {
+    background-color: var(--Desaturated-Dark-Cyan);
+    color: var(--Light-Grayish-Cyan-Filter-Tablets);
+}
+.feature {
+    background-color: var(--Very-Dark-Grayish-Cyan);
+    color: white;
+}
+
+.jobDetailsText {
+    gap: 0.5rem;
+}
+
+.jobDetailsText h4 {
+    color: var(--Very-Dark-Grayish-Cyan);
+    font-weight: var(--Weights-bold);
+}
+
+.jobDetailsList li{
+    color: var(--Dark-Grayish-Cyan);
+    font-size: 0.75rem;
+    font-weight: var(--Weights-bold);
+}
+
+.tools {
+    gap: 0.7rem;
+    flex-wrap: wrap;
+}
+
+.tools li {
+    color: var(--Desaturated-Dark-Cyan);
+    background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
+    padding: 0.3125rem 0.625rem;
+    font-size: 0.75rem;
+    font-weight: var(--Weights-bold);
+}
+
+@media (width < 650px) {
+    .imageBox {
+        position: absolute;
+        top: -43px;
+    }
+
+    .jobDetailsText {
+        margin-top: 1.5rem;
+    }
+
+    .filteredJobsWrapper {
+        gap: 3rem;
+    }
+}

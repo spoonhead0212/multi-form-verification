@@ -7,13 +7,10 @@
     -moz-border-radius: .5rem;
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
-    border: 1px solid red;
 }
 
 @media screen and (1029px > width) {
     .formBox {
-        /*position: absolute;
-        */border: 1px solid red;
         background-color: hsl(0, 0%, 100%);
         padding-block: 1rem;
         width: 90%;
