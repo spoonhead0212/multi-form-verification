@@ -1,0 +1,10 @@
+.checkoutModal {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    position: absolute;
+    inset: 0;
+}

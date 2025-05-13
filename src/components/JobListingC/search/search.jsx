@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import { availableJobs } from "@/AllSlices/jobsSlice/jobData/jobData";
 import style from './search.module.css'
+import { motion } from 'motion/react'
 
 // console.log(availableJobs);
 
@@ -43,7 +44,11 @@ function SearchFilter( {dispatch} ) {
     }
 
     return (
-        <div className={style.filterWrapper}>
+        <motion.div
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{duration: 1}}
+        className={style.filterWrapper}>
             <form action="" onSubmit={searchHandler}>
                 <input 
                 type="text" 
@@ -76,7 +81,7 @@ function SearchFilter( {dispatch} ) {
                      onClick={clearSearch}>clear</button>
                 </div>
             }
-        </div>
+        </motion.div>
     )
 }
 

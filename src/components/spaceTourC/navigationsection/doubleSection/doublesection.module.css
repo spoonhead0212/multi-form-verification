@@ -1,0 +1,47 @@
+.wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.imgWrapper,
+.contentWrapper {
+    flex-basis: 50%;
+}
+
+.imgWrapper {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+
+@media screen and (width < 900px) {
+    .wrapper {
+        /* margin-top: 2rem; */
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .imgWrapper,
+    .contentWrapper {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .imgWrapper {
+        min-height: 300px;
+    }
+    
+}
+
+@media screen and (width < 400px) {
+    .wrapper {
+        gap: 0;
+    }
+
+    .imgWrapper {
+        width: 100%;
+        min-height: 175px;
+        margin-inline: auto;
+    }
+}

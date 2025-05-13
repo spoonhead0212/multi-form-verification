@@ -1,0 +1,112 @@
+
+.desktopMenu {
+    font-family: var(--space-paragraph-font-family);
+    width: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.lineContainer .line {
+    min-height: 0.0625rem;
+    background-color: var(--darkest-ash-clr);
+    width: 115%;
+}
+
+.logo {
+    padding-inline: 2.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.navWrap {
+    background-color: var(--darkest-ash-clr);
+    flex-grow: 1;
+    border-radius: 0.100rem;
+    -webkit-border-radius: 0.100rem;
+    -moz-border-radius: 0.100rem;
+    -ms-border-radius: 0.100rem;
+    -o-border-radius: 0.100rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%); 
+    opacity: .5;
+}
+
+.menuNav {
+    isolation: isolate;
+}
+
+.menuNav a {
+    position: relative;
+    overflow-x: hidden;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menuNav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--space-white-clr);
+    bottom: -1.375rem;
+    opacity: 0;
+    transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -ms-transition: ease-in-out;
+    -o-transition: ease-in-out;
+}
+
+.menuNav a:hover::before {
+    opacity: 1;
+    transition-duration: 500ms;
+}
+
+.menuNav li{
+    display: inline-block;
+    padding: 1.4rem 2rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lineContainer {
+    width: 30%;
+    overflow-x: hidden;
+    transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -o-transform: translateX(15px);
+}
+
+.menuNumber {
+    padding-inline: .5rem;
+    font-weight: var(--space-font-bold);
+    color: var(--space-white-clr);
+}
+
+.menuLink {
+    color: var(--ash-clr);
+}
+
+@media screen and (width < 900px) {
+    
+    .lineContainer {
+        display: none;
+    }
+
+    .menuNav {
+        width: 100%;
+    }
+
+    .menuNav li {
+        padding: 1.4rem 0;
+    }
+    
+}

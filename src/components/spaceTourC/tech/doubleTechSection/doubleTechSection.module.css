@@ -1,0 +1,10 @@
+.sectionWrapper {
+    width: 100%;
+    display: flex;
+}
+
+@media screen and (width < 900px) {
+    .sectionWrapper {
+        flex-direction: column;
+    }
+}

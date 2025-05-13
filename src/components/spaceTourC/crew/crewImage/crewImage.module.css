@@ -1,0 +1,47 @@
+.imgWrap {
+    position: relative;
+    min-height: 400px;
+}
+
+.imgWrap > div {
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+}
+
+.imgWrap img {
+    object-fit: contain;
+}
+
+@media screen and (width < 900px) {
+
+    .imgWrap {
+        width: 100%;
+        min-height: 550px;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
+    .imgWrap > div {
+        /* min-height: 690px; */
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+}
+
+@media screen and (width < 400px) {
+    .imgWrap {
+        min-height: 260px;
+    }
+    
+}

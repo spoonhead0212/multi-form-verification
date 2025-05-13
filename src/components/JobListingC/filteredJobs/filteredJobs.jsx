@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image";
 import style from './filteredJobs.module.css'
+import { motion } from "motion/react";
 // import { useState } from "react";
 
 function FilteredJobs( {jobs} ) {
@@ -17,15 +18,24 @@ function FilteredJobs( {jobs} ) {
                 className={`${data.new ? style.new : ''} ${style.jobDetailsWrapper} ${style.flexRow}`}
                 >
                     <div className={style.jobDetails}>
-                        <div className={style.imageBox}>
+                        <motion.div
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{duration: 1}}
+                        className={style.imageBox}>
                             <Image
+                             whileTap={{ scale: 0.9 }}
                                 src={data.logo}
                                 alt={data.id}
                                 width={50}
                                 height={50}
                             />
-                        </div>
-                        <div className={`${style.jobDetailsText} ${style.flexColumn}`}>
+                        </motion.div>
+                        <motion.div
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{duration: 1, delay: .5}}
+                        className={`${style.jobDetailsText} ${style.flexColumn}`}>
                             <ul 
                             className={`${style.jobDetailsListing}`}>
                                 <li>{data.company}</li>
@@ -39,15 +49,19 @@ function FilteredJobs( {jobs} ) {
                                 <li>{data.contract}</li>
                                 <li>{data.location}</li>
                             </ul>
-                        </div>
+                        </motion.div>
                     </div>
-                    <div>
+                    <motion.div
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 1, delay: 1}}
+                    >
                         <ul className={`${style.flexRow} ${style.tools}`}>
                             {credentials[i].map((cred, index) => (
                                 <li key={index}>{cred}</li>
                             ))}
                         </ul>
-                    </div>
+                    </motion.div>
                 </div>
             ))}
         </div>

@@ -1,0 +1,52 @@
+.destList {
+    display: flex; 
+    gap: 1rem; 
+}
+
+.destButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--space-paragraph-font-family);
+    font-weight: var(--space-font-weight-reg);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding-block: 0.5rem;
+    color: var(--space-white-clr);
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+.destListBtn {
+    position: relative;
+    cursor: pointer;
+    padding-block: 0.5rem;
+}
+
+.destListBtn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    /* display: block; */
+    width: 100%;
+    height: 3px;
+    background-color: var(--space-white-clr);
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.destListBtn:hover::before {
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+@media screen and (width < 900px) {
+    .destList {
+        width: 100%;
+        justify-content: center;
+    }
+}

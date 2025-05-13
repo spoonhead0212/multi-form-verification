@@ -1,0 +1,62 @@
+.wrapper {
+    display: flex;
+    gap: 2rem;
+    width: clamp(330px, 80vw, 1000px)
+}
+
+.wrapper .dessertBox{
+    flex-grow: 1;
+}
+
+.wrapper .cartBox{
+    flex-basis: 330px;
+}
+
+.dessertBox {
+    flex-grow: 1;
+    font-family: var(--Product-list-Font-family);
+}
+
+.cartBox {
+    flex-basis: 20%;
+    background-color: white;
+}
+
+.productCanvas {
+    background-color: var(--Product-list-Rose-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dessertBox h2 {
+    color: var(--Product-list-Rose-900);
+    font-weight: var(--Product-list-Weight700);
+    line-height: 2;
+}
+
+.cartBox {
+    align-self: flex-start;
+    padding-block: 1.5rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.cartBox h3 {
+    color: var(--Product-list-Red);
+    font-weight: var(--Product-list-Weight700);
+}
+
+@media screen and (width < 800px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .wrapper .cartBox{
+        width: 100%;
+    }
+}

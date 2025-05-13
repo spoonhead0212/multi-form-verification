@@ -1,0 +1,51 @@
+.doubleBox {
+    display: flex;
+    width: clamp(300px, 95vw, 76.875rem);
+}
+
+.doubleBox > div {
+    flex-basis: 50%;
+}
+
+.crewWrap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (width < 900px) {
+    .doubleBox {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .doubleBox > div {
+        flex-basis: 100%;
+    }
+
+    .crewWrap {
+        inset: unset;
+    }
+
+    .doubleBox {
+        gap: 3rem;
+    }
+}
+
+@media screen and (width < 400px) {
+    .doubleBox {
+        gap: 1rem;
+    }
+
+    .crewWrap {
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+}

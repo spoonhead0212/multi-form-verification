@@ -1,0 +1,23 @@
+.sectionWrapper {
+  width: clamp(350px, 80vw, 1000px);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+@media screen and (width < 900px) {
+  .sectionWrapper {
+    top: 50%;
+  }
+}
+
+@media screen and (width < 400px) {
+  .sectionWrapper {
+    top: 55%;
+  }
+}

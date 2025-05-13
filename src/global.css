@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    /* border: 1px solid red; */
+}
 
 :root {
     --font-family: "Plus Jakarta Sans", sans-serif;
@@ -29,12 +40,39 @@
     --job-app-Font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+/* space */
+:root {
+    --space-heading-font-family: "Bellefair", sans-serif;
+    --space-paragraph-font-family: "Barlow Condensed", sans-serif;
+    --space-font-size: clamp(1rem, 1.2vw, 20px);
+    --space-font-weight-bold: 700;
+    --space-font-weight-reg: 400;
+    --space-font-header: clamp(1.5rem, 7vw, 6rem);
+    --space-subheading-font-size: clamp(1.5rem, 2vw, 2.5rem);
+    --space-dark-blue-clr: #000814;
+    --ash-clr: #adb5bd;
+    --space-white-clr: #ffffff;
+    --darkest-ash-clr: #495057;
 }
+
+/* products list */
+:root {
+    --Product-list-Red: hsl(14, 86%, 42%);
+    --Product-list-Green: hsl(159, 69%, 38%);
+    --Product-list-Rose-50: hsl(20, 50%, 98%);
+    --Product-list-Rose-100: hsl(13, 31%, 94%);
+    --Product-list-Rose-300: hsl(14, 25%, 72%);
+    --Product-list-Rose-400: hsl(7, 20%, 60%);
+    --Product-list-Rose-500: hsl(12, 20%, 44%);
+    --Product-list-Rose-900: hsl(14, 65%, 9%);
+    --Product-list-Font-size-product-names: 16px;
+    --Product-list-Font-family:  "Red Hat Text", sans-serif;
+    --Product-list-Weight400: 400;
+    --Product-list-Weight600: 600;
+    --Product-list-Weight700: 700
+}
+
+
 
 body {
     font-family: var(--font-family);
@@ -78,5 +116,79 @@ body {
 
 .btn:hover {
     background-color: var(--Slate-700);
+}
+
+/* space page design */
+
+.wrap-container {
+    overflow: hidden;
+}
+
+.subheading {
+    font-family: var(--space-paragraph-font-family);
+    font-size: var(--space-subheading-font-size);
+    font-weight: var(--space-font-weight-reg);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: var(--ash-clr)
+}
+
+.home-heading {
+    font-family: var(--space-heading-font-family);
+    font-size: clamp(120px, 9vw, 1200px);
+    font-weight: var(--space-font-weight-reg);
+    color: var(--space-white-clr);
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.sliding-header {
+    font-family: var(--space-heading-font-family);
+    font-size: clamp(80px, 5vw, 1200px);
+    font-weight: var(--space-font-weight-reg);
+    color: var(--space-white-clr);
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.paragraph,
+.sliding-paragragh {
+    font-family: var(--space-paragraph-font-family);
+    font-size: var(--space-font-size);
+    font-weight: var(--space-font-weight-reg);
+    color: var(--ash-clr);
+    line-height: 1.5;
+}
+
+.sliding-paragraph {
+    width: 70%;
+}
+
+.scroll {
+    overflow: hidden;
+}
+
+@media screen and (width < 900px) {
+    .subheading {
+        margin-inline: auto;
+        text-align: center;
+        width: 100%;
+    }
+    .paragraph {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (width < 400px) {
+    .home-heading {
+        font-size: 80px;
+    }
+
+    .sliding-header {
+        font-size: 55px;
+        line-height: 1.3;
+    }
 }
 

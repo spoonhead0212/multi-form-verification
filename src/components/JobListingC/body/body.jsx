@@ -10,19 +10,6 @@ function Body() {
     const initialState = {
         jobs: availableJobs
     };
-
-    // console.log(availableJobs);
-
-    // const credentials = availableJobs.flatMap(job => {
-    //     return [job.role, job.level, ...job.languages]
-    // })
-
-    // const filteredLanguages = [...new Set(credentials)].map(x => x.toLowerCase())
-    // console.log(filteredLanguages);
-
-    // console.log(credentials);
-    
-    
     
     function reducer(state, action) {
         switch (action.type) {

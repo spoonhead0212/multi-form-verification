@@ -1,0 +1,21 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.techContainer {
+    background-image: url('/images/spaceMedia/technology/background-technology-desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (width < 900px) {
+    .techContainer {
+        background-image: url('/images/spaceMedia/technology/background-technology-tablet.jpg');
+    }
+    
+}

@@ -1,0 +1,7 @@
+@media screen and (width < 900px) {
+    .subheadingWrapper {
+        justify-content: center;
+        width: 100%;
+    }
+    
+}

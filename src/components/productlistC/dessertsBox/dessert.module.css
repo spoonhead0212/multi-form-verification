@@ -1,0 +1,145 @@
+.dessertBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.quantityBtnBox {
+    display: flex;
+}
+
+.quantityBtnBox p {
+    color: black;
+}
+
+.details li {
+    color: black
+}
+
+.productImg {
+    width: 100%;
+    object-fit: fill;
+    height: 175px;
+    border-radius: .75rem;
+    -webkit-border-radius: .75rem;
+    -moz-border-radius: .75rem;
+    -ms-border-radius: .75rem;
+    -o-border-radius: .75rem;
+}
+
+.productBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY();
+    -webkit-transform: translateY(-25px);
+    -moz-transform: translateY();
+    -ms-transform: translateY();
+    -o-transform: translateY();
+}
+
+.allBtn {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.addToCartBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-family: var(--Product-list-Font-family);
+    font-weight: var(--Product-list-Weight600);
+    font-size: 13px;
+    align-items: center;
+    border: 1px solid var(--Product-list-Red);
+    border-radius: 20px;
+    background-color: white;
+    width: 100%;
+    cursor: pointer;
+    padding-block: 7px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+    transition: border 200ms ease-in-out;
+    -webkit-transition: border 200ms ease-in-out;
+    -moz-transition: border 200ms ease-in-out;
+    -ms-transition: border 200ms ease-in-out;
+    -o-transition: border 200ms ease-in-out;
+}
+
+.addToCartBtn:hover {
+    border: 0.0938rem solid var(--Product-list-Red);
+}
+
+.quantityBtnBox {
+    /*position: absolute;
+    */width: 100%;
+    justify-content: space-between;
+    padding: 7px 5px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: var(--Product-list-Red);
+    z-index: 1;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transition: 200ms ease-in-out;
+    -webkit-transition: 200ms ease-in-out;
+    -moz-transition: 200ms ease-in-out;
+    -ms-transition: 200ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+}
+
+.switchBtn {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.quantityBtnBox p {
+    color: white;
+}
+
+.quantityBtnBox button {
+    font-family: var(--Product-list-Font-family);
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 1px 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.details li:nth-child(1) {
+    color: var(--Product-list-Rose-400);
+    font-weight: var(--Product-list-Weight400);
+}
+
+.details li:nth-child(2) {
+    color: var(--Product-list-Rose-900);
+    font-weight: var(--Product-list-Weight600);
+    font-size: 14px;
+}
+.details li:nth-child(3) {
+    color: var(--Product-list-Red);
+    font-weight: var(--Product-list-Weight600);
+}

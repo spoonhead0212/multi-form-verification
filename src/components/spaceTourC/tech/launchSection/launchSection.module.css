@@ -1,0 +1,105 @@
+.techTerm {
+  font-family: var(--space-paragraph-font-family);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  color: var(--white);
+}
+
+.techName {
+    font-family: var(--space-heading-font-family);
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    letter-spacing: 1px;
+    color: var(--white-clr);
+    line-height: 1.75;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-bold);
+}
+
+.launchSectionWrapper {
+    display: flex;
+    gap: 2.5rem;
+    flex-basis: 55%;
+    padding-block: 4rem;
+}
+
+.launchSectionNumberBox {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.active {
+    background-color: var(--space-white-clr) !important;
+    color: var(--space-dark-blue-clr) !important;
+}
+
+.techButton {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 1.2rem 1.5rem;
+    font-family: var(--space-heading-font-family);
+    border: 1px solid var(--space-white-clr);
+    color: var(--space-white-clr);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@media screen and (width < 900px) {
+    .techDescription > p {
+        width: 100%;
+        text-align: left;
+        /* margin-top: 1rem; */
+    }
+
+    .launchSectionWrapper {
+        padding-block: 2rem;
+        flex-basis: 60%;
+    }
+
+    .techName {
+        line-height: 2;
+    }
+
+    .techDescriptionBoxed {
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (width < 400px) {
+    .launchSectionWrapper {
+        flex-direction: column; 
+        gap: .5rem;
+        padding-top: 1rem;
+    }
+    
+    .launchSectionNumberBox {
+        /* background-color: red; */
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .techDescription > p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .techName {
+        text-align: center;
+    }
+
+    .smallText {
+        margin-top: .5rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .techDescriptionBoxed {
+        padding-top: 1rem;
+    }
+}

@@ -1,0 +1,28 @@
+.techSectionWrapper {
+    width: 90%;
+    padding-bottom: 1rem;
+}
+
+.techSectionWrapper > div:first-child {
+    flex-basis: 60%;
+}
+
+@media screen and (width < 900px) {
+    .techSectionWrapper  {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (width < 400px) {
+    .techSectionWrapper {
+        width: 90%;
+        padding-bottom: unset;
+    }
+}

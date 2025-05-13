@@ -1,0 +1,106 @@
+/* .cartItem > * {
+    color: black;
+} */
+
+.cartItem li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.0425rem solid var(--Product-list-Rose-300);
+    padding-block: 1rem;
+}
+
+.itemName {
+    color: var(--Product-list-Rose-900);
+    font-weight: var(--Product-list-Weight600);
+    font-size: 14px;
+}
+
+.itemDetails {
+    margin-top: .25rem;
+}
+
+.itemDetails span:nth-child(1){
+    display: inline-block;
+    padding-right: .5rem;
+    color: var(--Product-list-Red);
+    font-weight: var(--Product-list-Weight600);
+    font-size: 14px;
+}
+
+.itemDetails span:nth-child(2), 
+.itemDetails span:nth-child(3){
+    display: inline-block;
+    padding-right: .25rem;
+    color: var(--Product-list-Rose-500);
+    font-size: 13px;
+    font-weight: var(--Product-list-Weight600);
+}
+
+.confirmOrderBtn {
+    width: 100%;
+    text-align: center;
+}
+
+.removeBtn {
+    border: 1px solid var(--Product-list-Rose-400);
+    cursor: pointer;
+    text-align: center;
+    padding: 2px 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.carbon {
+    width: 100%;
+    background-color: var(--Product-list-Rose-100);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.carbon p {
+    color: var(--Product-list-Rose-400);
+    font-size: 14px;
+}
+
+.carbon span {
+    color: var(--Product-list-Rose-900);
+    font-weight: var(--Product-list-Weight600);
+}
+
+.orderBtnBx {
+    display: flex;
+}
+
+.orderBtnBx > a {
+    flex-grow: 1;
+    background-color: var(--Product-list-Red);
+    text-decoration: none;
+    color: white;
+    font-weight: var(--Product-list-Rose-900);
+    padding-block: .5rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+@media screen and (width < 800px){
+    .orderBtnBx > a {
+        padding-block: 1rem;
+    }
+}

@@ -1,0 +1,24 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    /* display: grid;
+    place-items: center; */
+}
+
+.crewContainer {
+    background-image: url('/images/spaceMedia/crew/background-crew-desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+}
+
+@media screen and (width < 900px) {
+    .crewContainer {
+        background-image: url('/images/spaceMedia/crew/background-crew-tablet.jpg');
+        display: grid;
+        place-items: center;
+    }
+}
+
+

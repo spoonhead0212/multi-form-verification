@@ -1,0 +1,24 @@
+.techImageBox {
+    position: relative;
+    flex-grow: 1;
+}
+
+.techImageBox img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+@media screen and (width < 900px) {
+    .techImageBox {
+        height: 600px;
+    }
+}
+
+@media screen and (width < 400px) {
+    .techImageBox {
+        height: 240px;
+    }
+}
