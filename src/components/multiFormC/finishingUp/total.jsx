@@ -1,9 +1,11 @@
 import React from 'react'
 import { useSelector } from "react-redux"
-import { selectedPlan } from "@/AllSlices/planSlice/planSlice"
-import { selectedAddons } from '@/AllSlices/addonSlice/addonSlice'
+// import { selectedPlan } from "@/AllSlices/planSlice/planSlice"
+// import { selectedAddons } from '@/AllSlices/addonSlice/addonSlice'
 import { useState, useEffect } from 'react'
 import style from './plan.module.css'
+import { selectedPlan } from '../../../AllSlices/planSlice/planSlice'
+import { selectedAddons } from '../../../AllSlices/addonSlice/addonSlice'
 
 function Total() {
     const [AllSubTotal, setAllSubTotal] = useState([])

@@ -1,0 +1,184 @@
+.heroFence {
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.heroFence_inside {
+    display: flex;
+    height: inherit;
+}
+
+.heroFence_insideContent {
+    min-width: 100vw;
+    height: inherit;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.contentBox {
+    padding-left: clamp(10px, 5vw, 5rem);
+    width: clamp(350px, 50vw, 37.5rem);
+    z-index: 5;
+}
+
+.contentBox h1 {
+    font-size: var(--trendZH1Size);
+    line-height: var(--trendZH1LineHeight);
+}
+
+.contentBox p {
+    font-size: var(--trendZRegFont);
+    line-height: var(--trendZRegFontLh);
+    width: clamp(280px, 35vw, 400px);
+}
+
+.ctaBtn {
+    background-color: black;
+    font-family: var(--trendZFont);
+    text-align: center;
+    color: var(--trendZWhiteClr);
+    text-decoration: none;
+    font-weight: 500;
+    border: var(--trendZBlackClr) 2px solid;
+    padding: .75rem 1.2rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 400ms ease;
+    -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -ms-transition: 400ms ease;
+    -o-transition: 400ms ease;
+}
+
+.ctaBtn::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translateX(100%);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: 400ms ease;
+    -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -ms-transition: 400ms ease;
+    -o-transition: 400ms ease;
+}
+ 
+.ctaBtn:hover::before {
+    background-color: var(--trendZWhiteClr);
+    z-index: -1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transition: 400ms ease-in-out;
+    -webkit-transition: 400ms ease-in-out;
+    -moz-transition: 400ms ease-in-out;
+    -ms-transition: 400ms ease-in-out;
+    -o-transition: 400ms ease-in-out;
+}
+
+.ctaBtn:hover {
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+.BGWrap {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: inherit;
+    z-index: -1;
+}
+
+.BGWrap img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Applying animation to your element */
+.ctaBtn {
+    display: inline-block;
+}
+
+.scrollDirection {
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    /* gap: 1rem; */
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 0.625rem;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.scrollDirection button {
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    padding: .75rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+}
+
+@media screen and (width < 600px) {
+    
+    .heroFence {
+        height: 500px;
+    }
+
+    .BGWrap img {
+        filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+    }
+
+    .heroFence_insideContent {
+        padding-left: unset;
+    }
+
+    .scrollDirection {
+        position: absolute;
+        bottom: 0;
+        top: unset;
+        left: 0;
+        right: 0;
+    }
+
+    .contentBox p {
+        margin-block: 1rem;
+    }
+}

@@ -1,0 +1,10 @@
+.head_h2 {
+    color: var(--trendZBlackClr);
+    font-size: clamp(2rem, 10vw, 5rem);
+}
+
+.headBox {
+    overflow-y: hidden;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}

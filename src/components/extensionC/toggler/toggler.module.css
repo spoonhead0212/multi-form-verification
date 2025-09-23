@@ -1,0 +1,56 @@
+/* From Uiverse.io by ClawHack1 */ 
+/* Genel stil */
+.toggleSwitch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  /* border: 1px solid var(--Red-500); */
+  padding: 3px;
+  border-radius: 34px;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  -o-border-radius: 34px;
+}
+
+/* Giriş stil */
+.toggleSwitch .toggleInput {
+  display: none;
+}
+
+/* Anahtarın stilinin etrafındaki etiketin stil */
+.toggleSwitch .toggleLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Neutral-600);
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Anahtarın yuvarlak kısmının stil */
+.toggleSwitch .toggleLabel::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+/* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+.toggleSwitch .toggleInput:checked + .toggleLabel {
+  background-color: var(--Red-500);
+}
+
+.toggleSwitch .toggleInput:checked + .toggleLabel::before {
+  transform: translateX(16px);
+}

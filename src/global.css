@@ -3,12 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     list-style-type: none;
+    scroll-behavior: smooth;
     /* border: 1px solid red; */
 }
 
@@ -72,7 +77,57 @@
     --Product-list-Weight700: 700
 }
 
+/* Comment */
+:root {
+    --Comment-Purple-600: hsl(238, 40%, 52%);
+    --Comment-Pink-400: hsl(358, 79%, 66%);
+    --Comment-Purple-200: hsl(239, 57%, 85%);
+    --Comment-Pink-200: hsl(357, 100%, 86%);
+    --Comment-Grey-800: hsl(212, 24%, 26%);
+    --Comment-Grey-500: hsl(211, 10%, 45%);
+    --Comment-Grey-100: hsl(223, 19%, 93%);
+    --Comment-Grey-50: hsl(228, 33%, 97%);
+    --Comment-White: hsl(0, 100%, 100%);
+    --Comment-Font-weight400: 400;
+    --Comment-Font-weight500: 500;
+    --Comment-Font-weight600: 600;
+    --Comment-Font-size-paragraph: 16px;
+    --Comment-Font-Family: "Rubik", sans-serif;
+}
 
+:root {
+    --Neutral-900: hsl(227, 75%, 14%);
+    --Neutral-800: hsl(226, 25%, 17%);
+    --Neutral-700: hsl(225, 23%, 24%);
+    --Neutral-600: hsl(226, 11%, 37%);
+    --Neutral-300: hsl(0, 0%, 78%);
+    --Neutral-200: hsl(217, 61%, 90%);
+    --Neutral-100: hsl(0, 0%, 93%);
+    --Neutral-0: hsl(200, 60%, 99%);
+    --Red-400: hsl(3, 86%, 64%);
+    --Red-500: hsl(3, 71%, 56%);
+    --Red-700: hsl(3, 77%, 44%);
+    --extensions-font-family: "Noto Sans", sans-serif;
+    --Font-size: .8rem;
+    --FontWeight400: 400;
+    --FontWeight500: 500;
+    --FontWeight700: 700;
+    --Light-Gradient: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+    /* --Dark-Gradient: linear-gradient(180deg, #040918 0%, #091540 100%); */
+    --Dark-Gradient: linear-gradient(#040918, #091540);
+}
+
+:root {
+    --trendZFont: "Unbounded", sans-serif;
+    --trendZRegFont: 0.9375rem;
+    --trendZRegFontWeight: 400;
+    --trendZWhiteClr: #dee2e6;
+    --trendZBlackClr: #212529;
+    --trendZLightBlackClr: #6c757d;
+    --trendZH1Size: clamp(1rem, 10vw, 4rem);
+    --trendZH1LineHeight: 1.1;
+    --trendZRegFontLh: 1.4;
+}
 
 body {
     font-family: var(--font-family);
@@ -167,6 +222,70 @@ body {
 
 .scroll {
     overflow: hidden;
+}
+
+/* cosmetics button component style */
+.atcBtn {
+    background-color: black;
+    font-family: var(--trendZFont);
+    font-size: .75rem;
+    text-align: center;
+    color: var(--trendZWhiteClr);
+    text-decoration: none;
+    font-weight: 500;
+    border: var(--trendZBlackClr) 2px solid;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 400ms ease;
+    -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -ms-transition: 400ms ease;
+    -o-transition: 400ms ease;
+}
+
+.atcBtn:hover,
+.atcBtn:focus {
+    border: var(--trendZLightBlackClr) 2px solid;
+    background-color: transparent;
+    color: black;
+}
+
+.routeBtn {
+    background-color: black;
+    font-family: var(--trendZFont);
+    font-size: .75rem;
+    text-align: center;
+    color: var(--trendZWhiteClr);
+    text-decoration: none;
+    font-weight: 500;
+    border: var(--trendZBlackClr) 2px solid;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    cursor: pointer;
+    transition: 400ms ease;
+    -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -ms-transition: 400ms ease;
+    -o-transition: 400ms ease;
+}
+
+.routeBtn:hover,
+.routeBtn:focus {
+    border: var(--trendZLightBlackClr) 2px solid;
+    background-color: transparent;
+    color: black;
 }
 
 @media screen and (width < 900px) {

@@ -1,0 +1,32 @@
+.toggleWrap {
+    width: 100%;
+}
+
+.insideToggleWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: .5rem;
+    border-radius: .5rem;
+    background-color: var(--Neutral-700);
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.clrModeBtn {
+    background-color: var(--Neutral-600);
+    padding: .4rem .4rem .3rem .4rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: none;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.clrModeBtn:focus {
+    border: 1px solid var(--Red-500);
+}

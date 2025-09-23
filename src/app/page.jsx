@@ -8,6 +8,8 @@ function Root() {
             <Link href='/job-listing'>Job listings with filtering</Link>
             <Link href='/space-tourism'>Space tourism</Link>
             <Link href='/product-list'>Product list</Link>
+            <Link href='/comment'>Comment</Link>
+            <Link href='/extension'>Extension</Link>
         </div>
     )
 }

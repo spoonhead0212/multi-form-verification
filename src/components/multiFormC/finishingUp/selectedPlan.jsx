@@ -1,7 +1,8 @@
 'use client'
 import { useSelector } from "react-redux";
-import { selectedPlan } from "@/AllSlices/planSlice/planSlice";
+// import { selectedPlan } from "@/AllSlices/planSlice/planSlice";
 import style from './plan.module.css'
+import { selectedPlan } from "../../../AllSlices/planSlice/planSlice";
 
 function SelectedPlan( {setDisplay} ) {
 

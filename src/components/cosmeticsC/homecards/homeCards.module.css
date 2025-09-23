@@ -1,0 +1,55 @@
+.cardBox {
+    display: flex;
+    width: 100%;
+    margin-block: 8rem;
+    flex-wrap: wrap;
+}
+
+.cardbox_inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardBox > div {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1rem;
+}
+
+.cardBox h3 {
+    color: black;
+}
+
+.cardbox_inside > div:nth-child(2) {
+    width: 60%;
+    text-align: center;
+}
+
+.cardBox p {
+    color: var(--trendZLightBlackClr);
+    line-height: 1.5;
+    font-size: .85rem;
+}
+
+.cardBox > div:not(:last-child) {
+    border-right: var(--trendZLightBlackClr) 1px solid;
+}
+
+@media screen and (width < 800px) {
+    .cardBox {
+        gap: 2.5rem;
+    }
+
+    .cardBox > div:not(:last-child) {
+        border: unset;
+    }
+
+    .cardBox > div {
+        gap: .75rem;
+    }
+}

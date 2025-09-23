@@ -1,7 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { selectedAddons } from '@/AllSlices/addonSlice/addonSlice';
+// import { selectedAddons } from '@/AllSlices/addonSlice/addonSlice';
 import style from './plan.module.css'
+import { selectedAddons } from '../../../AllSlices/addonSlice/addonSlice'
 
 function SelectedAddon() {
 

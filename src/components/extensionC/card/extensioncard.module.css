@@ -1,0 +1,76 @@
+.extensionCard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: .5rem;
+    background-color: var(--Neutral-800);
+    border: 1px solid var(--Neutral-600);
+    border-radius: .75rem;
+    -webkit-border-radius: .75rem;
+    -moz-border-radius: .75rem;
+    -ms-border-radius: .75rem;
+    -o-border-radius: .75rem;
+}
+
+.cardTop {
+    display: flex;
+    gap: .5rem;
+}
+
+.cardTop_Text p {
+    color: var(--Neutral-300);
+    font-size: var(--Font-size);
+    margin-top: .5rem;
+}
+
+.cardBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.removeBtnBox {
+    border: 1px solid transparent;
+    display: grid;
+    place-items: center;
+    padding: 1px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    transition: 200ms ease-in-out;
+    -webkit-transition: 200ms ease-in-out;
+    -moz-transition: 200ms ease-in-out;
+    -ms-transition: 200ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+}
+
+.removeBtnBox:hover {
+    border: 1px solid var(--Red-500);
+}
+
+.removeBtnBox > button {
+    box-sizing: border-box;
+    background-color: var(--Neutral-600);
+    font-family: var(--extensions-font-family);
+    color: var(--Neutral-0);
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    -webkit-transition: 200ms ease-in-out;
+    -moz-transition: 200ms ease-in-out;
+    -ms-transition: 200ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+}
+
+.removeBtnBox > button:hover {
+    background-color: var(--Red-500);
+    color: var(--Neutral-800);
+}

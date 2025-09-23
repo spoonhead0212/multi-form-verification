@@ -1,10 +1,11 @@
 'use client'
-import { menuData } from "@/AllSlices/spaceSlice/spaceData/menu"
+// import { menuData } from "@/AllSlices/spaceSlice/spaceData/menu"
 import style from './desktopMenu.module.css'
 import Link from "next/link"
 import Image from "next/image"
 import clsx from "clsx"
 import { motion } from "motion/react"
+import { menuData } from '../../../AllSlices/spaceSlice/spaceData/menu'
 
 function DesktopMenu() {
   return (

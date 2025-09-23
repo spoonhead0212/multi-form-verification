@@ -18,8 +18,6 @@ function Menu() {
     
         return () => window.removeEventListener('resize', handleResize);
       }, []);
-    
-    //   console.log('Screen Width:', screenWidth);
       
     return (
         <div className={style.menuWrap}>

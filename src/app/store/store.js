@@ -1,12 +1,14 @@
-// import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { persistStore, persistReducer } from 'redux-persist'
+import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
-import addonReducer from "../../AllSlices/addonSlice/addonSlice"
-import planReducer from "../../AllSlices/planSlice/planSlice"
-import productsReducer from "@/AllSlices/productsSlice/productsSlice";
+// import addonReducer from "../../AllSlices/addonSlice/addonSlice"
+// import planReducer from "../../AllSlices/planSlice/planSlice"
+import productsReducer from "../../AllSlices/productsSlice/productsSlice";
+import commentsReducer from '../../AllSlices/commentsSlice/commentsSlice';
+import extensionsReducer from '../../AllSlices/extensionSlice/extensionSlice'
+import authReducer from '../../AllSlices/cosmeticsSlice/authSlice'
 
-const persistConfig = {
+export const persistConfig = {
     key: 'root',
     storage,
 }
@@ -14,11 +16,13 @@ const persistConfig = {
 const reducer = combineReducers({
     // plans: planReducer,
     // addons: addonReducer,
-    productList: productsReducer
+    productList: productsReducer,
+    extensionList: extensionsReducer,
+    comments: commentsReducer,
+    auth: authReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, reducer) 
-
 
 export const store = configureStore({
     reducer: persistedReducer,

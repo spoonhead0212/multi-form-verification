@@ -1,0 +1,84 @@
+.conProBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.conProBox > div {
+    height: 450px;
+}
+
+.conProBox_image {
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+
+.conProBox_image img {
+    position: absolute;
+    /* width: inherit;
+    height: inherit; */
+}
+
+.conProBox >:nth-child(1),
+.conProBox >:nth-child(4) {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.conProBox >:nth-child(2),
+.conProBox >:nth-child(3) {
+        border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 4rem;
+}
+
+.conProBox_proCat {
+    color: var(--trendZLightBlackClr);
+}
+.conProBox_proHead {
+    color: var(--trendZLightBlackClr);
+    color: black;
+    font-size: clamp(2rem, 2.5vw + 1rem, 3rem)
+}
+.conProBox_content {
+    color: var(--trendZLightBlackClr);
+    line-height: 1.7;
+    width: 80%;
+}
+
+@media screen and (width < 700px) {
+    .conProBox >:nth-child(2),
+    .conProBox >:nth-child(3) {
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+    }
+
+    .conProBox_content {
+        width: 90%;
+        line-height: 1.7;
+    }
+
+    .conProBox >:nth-child(3) {
+        order: 4;
+    }
+    .conProBox >:nth-child(4) {
+        order: 3;
+    }
+
+    .conProBox > div {
+        height: 300px;
+    }
+
+    .conProBox {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

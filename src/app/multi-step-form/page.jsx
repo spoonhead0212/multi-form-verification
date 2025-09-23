@@ -1,6 +1,8 @@
 'use client'
-import FormsBox from "@/components/multiFormC/formsBox/formsBox"
-import Steps from "@/components/multiFormC/stepBox/stepBox"
+import FormsBox from '../../components/multiFormC/formsBox/formsBox'
+import Steps from '../../components/multiFormC/stepBox/stepBox'
+// import FormsBox from "@/components/multiFormC/formsBox/formsBox"
+// import Steps from "@/components/multiFormC/stepBox/stepBox"
 import style from './module-step-form.module.css'
 import { useState } from "react"
 

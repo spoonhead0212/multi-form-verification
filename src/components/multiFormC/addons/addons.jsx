@@ -1,10 +1,13 @@
-import { useFormSetup } from "@/hooks"
+// import { useFormSetup } from "@/hooks"
+import { useFormSetup } from "../../../hooks"
 import { useEffect} from "react"
 import {z} from 'zod'
 import style from './addons.module.css'
 import { useDispatch, useSelector } from "react-redux"
-import { addAddons } from "@/AllSlices/addonSlice/addonSlice"
-import { selectedPlan } from "@/AllSlices/planSlice/planSlice"
+// import { addAddons } from "@/AllSlices/addonSlice/addonSlice"
+// import { selectedPlan } from "@/AllSlices/planSlice/planSlice"
+import { addAddons } from "../../../AllSlices/addonSlice/addonSlice"
+import { selectedPlan } from "../../../AllSlices/planSlice/planSlice"
 
 const schema = z.object({
     addon: z
@@ -38,7 +41,6 @@ function Addons({setDisplay, display}) {
     };
 
     function myAddons(data) {
-        // console.log(currentToggleState);
         
         const updatedAddon = data
         .filter(dt => 

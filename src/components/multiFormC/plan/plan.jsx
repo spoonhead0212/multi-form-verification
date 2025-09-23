@@ -3,9 +3,11 @@ import style from './plan.module.css'
 import Monthly from '../plantype/month'
 import Yearly from '../plantype/year'
 import {z} from 'zod'
-import { useFormSetup } from '@/hooks'
+// import { useFormSetup } from '@/hooks'
 import { useDispatch } from 'react-redux'
-import { addPlan } from '@/AllSlices/planSlice/planSlice'
+// import { addPlan } from '@/AllSlices/planSlice/planSlice'
+import { useFormSetup } from '../../../hooks'
+import { addPlan } from '../../../AllSlices/planSlice/planSlice'
 
 const schema = z.object({
     plan: z
@@ -47,7 +49,6 @@ function Plan({setDisplay, togglePlan, setTogglePlan, display}) {
         } else if (data.plan === "pro") {
         price = togglePlan ? 150 : 15;
         }
-        console.log(data);
         
         myPlan(data, price)
         setDisplay(prev => prev + 1)

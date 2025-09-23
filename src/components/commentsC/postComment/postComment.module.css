@@ -1,0 +1,65 @@
+.commentInput {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.inputBox {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.inputSection {
+    flex-grow: 1;
+    display: flex;
+    gap: 1rem;
+}
+
+.inputSection form {
+    width: 100%;
+}
+
+.inputSection textarea {
+    flex-grow: 1;
+    height: 70px;
+}
+
+.typeComment {
+    padding: .5rem;
+    font-family: var(--Comment-Font-Family);
+    color: var(--Comment-Grey-800);
+    border: 1px solid var(--Comment-Grey-500);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.typeComment:focus {
+    border: 1px solid var(--Comment-Purple-200);
+    outline: none;
+}
+
+.submitBtn {
+    background-color: var(--Comment-Purple-600);
+    color: white;
+    font-family: var(--Comment-Font-Family);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: var(--Comment-Purple-200);
+}

@@ -1,6 +1,8 @@
 "use client"
 import '../global.css'
-import { Providers } from '@/provider/providers'
+import { useEffect } from 'react'
+import { Providers } from '../provider/providers'
+
 
 export default function RootLayout({ children }) {
 
@@ -10,6 +12,10 @@ export default function RootLayout({ children }) {
     color: 'white',
     width: '100%'
   }
+
+  // useEffect(() => {
+  //   localStorage.clear()
+  // }, [])
 
   return (
     <html lang="en">

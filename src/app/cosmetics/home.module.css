@@ -1,0 +1,13 @@
+.Fence {
+    font-family: var(--trendZFont);
+}
+
+.sectionWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapInside {
+    width: clamp(330px, 90vw, 1300px);
+}

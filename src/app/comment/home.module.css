@@ -1,0 +1,23 @@
+.home {
+    padding-top: 2rem;
+    background-color: var(--Comment-Grey-100);
+    width: 100vw;
+    min-height: 100vh;
+    color: black
+}
+
+.insideHomeBx {
+    width: clamp(330px, 80vw, 1100px);
+    margin-inline: auto;
+}
+
+@media screen and (width < 800px) {
+    .insideHomeBx {
+        width: 90%;
+    }
+
+    .home {
+        padding-bottom: 2rem;
+    }
+}
+

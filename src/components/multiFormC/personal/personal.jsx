@@ -1,6 +1,6 @@
 'use client'
+import { useFormSetup } from '../../../hooks'
 import style from './personal.module.css'
-import { useFormSetup } from '@/hooks'
 import {z} from 'zod'
 
 const schema = z.object({

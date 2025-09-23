@@ -1,10 +1,11 @@
 'use client'
-import { menuData } from "@/AllSlices/spaceSlice/spaceData/menu"
+// import { menuData } from "@/AllSlices/spaceSlice/spaceData/menu"
 import style from './mobileMenu.module.css'
 import Image from "next/image"
 import { AnimatePresence, motion } from "motion/react"
 import { useState } from "react"
 import Link from "next/link"
+import { menuData } from '../../../AllSlices/spaceSlice/spaceData/menu'
 
 const Hamburger = motion(Image)
 

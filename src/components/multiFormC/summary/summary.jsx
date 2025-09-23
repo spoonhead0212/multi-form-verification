@@ -1,6 +1,6 @@
-import { useSelector } from "react-redux";
-import { selectedPlan } from "@/AllSlices/planSlice/planSlice";
-import { selectedAddons } from "@/AllSlices/addonSlice/addonSlice";
+// import { useSelector } from "react-redux";
+// import { selectedPlan } from "@/AllSlices/planSlice/planSlice";
+// import { selectedAddons } from "@/AllSlices/addonSlice/addonSlice";
 import SelectedPlan from "../finishingUp/selectedPlan";
 import SelectedAddon from "../finishingUp/selectedAddon";
 import Total from "../finishingUp/total";

@@ -1,0 +1,19 @@
+.insideWrap {
+    min-height: 100vh;
+    width: clamp(330px, 80vw, 1000px);
+    margin-inline: auto;
+}
+
+.box {
+    padding-block: 2rem;
+    font-family: var(--extensions-font-family);
+}
+
+.lightBG {
+    background-image: var(--Light-Gradient);
+}
+
+.darkBG {
+    background-image: var(--Dark-Gradient);
+}
+

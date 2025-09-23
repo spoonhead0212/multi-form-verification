@@ -1,0 +1,76 @@
+.categoryBox {
+    display: flex;
+}
+
+.categoryBox > div {
+    flex-basis: 33.3%;
+    position: relative;
+}
+
+.categoryBox_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-block: 2rem;
+    flex-basis: 34%;
+}
+
+.categoryBox_link a {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--trendZLightBlackClr);
+    font-size: clamp(2rem, 2vw + 1rem, 5rem);
+    width: fit-content;
+    transition: 200ms ease-in-out;
+    -webkit-transition: 200ms ease-in-out;
+    -moz-transition: 200ms ease-in-out;
+    -ms-transition: 200ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+}
+
+.categoryBox_link a:hover {
+    color: black;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+.categoryBox_right div {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 8%;
+}
+
+.categoryBox_left div {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 20%;
+}
+
+.categoryBox_left img, 
+.categoryBox_right img {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: block;
+}
+
+@media  screen and (width < 800px) {
+    .categoryBox > div:not(.categoryBox_link) {
+        display: none;
+    }
+
+    .categoryBox {
+        width: 100%;
+        justify-content: center;
+    }
+}

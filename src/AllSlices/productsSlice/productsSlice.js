@@ -21,7 +21,7 @@ export const productSlice = createSlice({
             }
 
             if (indexInCart !== -1) {
-                // finds the particular cart item and them replace it with the latest on
+                // finds the particular cart item and them replace it with the latest one
                 state.cartList[indexInCart] = {
                     ...item
                 };

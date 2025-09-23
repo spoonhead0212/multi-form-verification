@@ -4,8 +4,6 @@ import { availableJobs } from "@/AllSlices/jobsSlice/jobData/jobData";
 import style from './search.module.css'
 import { motion } from 'motion/react'
 
-// console.log(availableJobs);
-
 function SearchFilter( {dispatch} ) {
     const [search, setSearch] = useState('')
     const [searchResults, setSearchResults] = useState([])

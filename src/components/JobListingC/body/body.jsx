@@ -1,6 +1,6 @@
 'use client';
 import { useReducer } from "react";
-import { availableJobs } from "@/AllSlices/jobsSlice/jobData/jobData";
+import { availableJobs } from "../../AllSlices/jobsSlice/jobData/jobData";
 import style from './body.module.css';
 import SearchFilter from "../search/search";
 import FilteredJobs from "../filteredJobs/filteredJobs";
